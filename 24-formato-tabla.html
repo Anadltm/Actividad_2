@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas</title>
+    
+    <style>
+        
+        table{
+            border-collapse: collapse;/*que todas las celdas estén juntas*/
+            margin: auto;/* Centra la tabla en el navegador */
+        }
+    
+        td, th{
+            border-bottom: 1px solid grey;/* Q tenga sólo una línea por la parte inferior, sólida y gris */
+            padding:10px 20px;/* para que no esten los elementos pegados al borde vertical y horizontal*/
+            font: 1.1rem "canbrua", serif;/* Tipo de letra */
+        }
+        th{
+            font-weight: bold; /* Negritas */
+            color:darkred;/* Color letra*/
+        }
+        /* Que cada fila tenga un color distinto */
+        tr:nth-child(even) td {
+            background: #eee;
+        }
+        tr:hover td, tr:hover th{
+            background:#ddd;
+        }
+    
+    </style>
+</head>
+<body>
+   
+   <h1>Tablas</h1>
+   
+   <!-- table>tr*4>th+td*3 -->
+   
+   <table>
+       <tr>
+           <th>Nombre</th>
+           <th>Apellidos</th>
+           <th>Ciudad</th>
+           <th>Edad</th>
+       </tr>
+       <tr>
+           <th>Juan</th>
+           <td>López</td>
+           <td>Sevilla</td>
+           <td>23</td>
+       </tr>
+       <tr>
+           <th>Ana</th>
+           <td>Martín</td>
+           <td>Zamora</td>
+           <td>19</td>
+       </tr>
+       <tr>
+           <th>Luís</th>
+           <td>Gómez</td>
+           <td>Tarragona</td>
+           <td>31</td>
+       </tr>
+       <tr>
+           <th>Andrea</th>
+           <td>Bolillo</td>
+           <td>Cuenca</td>
+           <td>48</td>
+       </tr>
+       
+       <tr>
+           <th>Jose</th>
+           <td>Matín</td>
+           <td>Palencia</td>
+           <td>31</td>
+       </tr>
+   </table>
+   
+  
+    
+</body>
+</html>
